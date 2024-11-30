@@ -1,0 +1,234 @@
+/* Universal Selector - Applies box-sizing, margin, and padding reset to all elements */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Responsive Images - Ensures images scale properly within their containers */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Smooth Scrolling - Enables smooth scrolling behavior for the entire document */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Main Body Styles - Sets font, line height, background color, and width for the body */
+body {
+  font-family: Roboto, Arial, sans-serif;
+  line-height: 1.6;
+  background-color: rgb(220, 220, 220);
+  width: 100%; /* Allow full width for larger screens */
+  margin: 0 auto;
+}
+
+/* Header Styles - Styles for the header section including background and text color */
+header {
+  background: rgb(0, 123, 255); /* Changed to a vibrant blue */
+  color: rgb(255, 255, 255);
+  padding: 20px 30px; /* Increased padding */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Added shadow for depth */
+}
+
+/* Logo Container - Flexbox layout for logo alignment */
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+/* Logo Styles - Sets dimensions and border radius for the logo */
+.logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+/* Navigation Styles - Background, padding, and margin for the navigation bar */
+nav {
+  background: rgb(51, 51, 51); /* Changed to a darker shade */
+  padding: 15px 0; /* Increased padding */
+  border-radius: 5px; 
+  margin: 10px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Added shadow for depth */
+}
+
+/* Navigation List Styles - Removes default list styles and centers the items */
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex; 
+  justify-content: center; 
+}
+
+/* Navigation Item Styles - Sets margin for individual navigation items */
+nav ul li {
+  margin: 0 20px; /* Increased margin for better spacing */
+}
+
+/* Navigation Link Styles - Sets color, decoration, and transition effects for links */
+nav a {
+  color: rgb(255, 255, 255); 
+  text-decoration: none;
+  position: relative; 
+  padding: 10px 0; /* Increased padding for better click area */
+  transition: color 0.3s, background 0.3s, transform 0.3s; /* Added transform transition */
+}
+
+/* Navigation Link Hover Effect - Color change on hover */
+nav a:hover {
+  color: rgb(0, 123, 255); /* Change text color on hover */
+  text-decoration: none; /* No underline effect */
+}
+
+/* About Me Header Styles - Modern styling for the h2 header */
+h2 {
+  font-size: 2em; /* Increase font size */
+  font-weight: bold; /* Bold text */
+  color: rgb(0, 123, 255); /* Match the theme color */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  margin: 20px 0; /* Spacing around the header */
+}
+
+/* Section Styles - Padding, margin, background, and text alignment for sections */
+section {
+  padding: 20px;
+  margin: 20px 0; /* Adjusted margin to reduce space above and below sections */
+  background: rgb(255, 255, 255);
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* Skills Container - Flexbox layout for skills cards */
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Space between cards */
+}
+
+/* Skill Card Styles - Styles for individual skill cards */
+.skill-card {
+  background: rgb(0, 123, 255);
+  color: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Skill Card Hover Effect - Scale and shadow effect on hover */
+.skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Profile Image Styles - Centers the profile image */
+.profile-image {
+  display: block;
+  margin: 15px auto; 
+}
+
+/* Call to Action Button Styles - Styles for the main action button */
+.cta-button {
+  background: rgb(0, 123, 255); 
+  color: rgb(255, 255, 255); 
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  display: block; 
+  margin: 15px auto; 
+  width: fit-content; 
+  text-decoration: none;
+  transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+/* Call to Action Button Hover Effect - Changes background and adds shadow on hover */
+.cta-button:hover {
+  background: rgb(0, 86, 179);
+  transform: scale(1.05); 
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Footer Styles - Centers text and sets background color for the footer */
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background: rgb(51, 51, 51); 
+  color: rgb(255, 255, 255);
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  margin-top: 0; /* Ensure no margin above the footer */
+  height: auto; /* Allow footer to adjust height based on content */
+}
+
+/* Responsive Styles - Adjusts layout for smaller screens */
+@media (max-width: 600px) {
+  nav ul li {
+      display: inline; /* Keep navigation links inline */
+      margin: 0 10px; /* Adjust margin for smaller screens */
+  }
+
+  header h1 {
+      font-size: 1.5em; /* Adjust header font size for smaller screens */
+  }
+}
+
+/* Responsive Styles for larger screens - Adjusts font size and layout */
+@media (min-width: 1024px) {
+  body {
+    font-size: 18px; /* Increases font size for larger screens */
+  }
+  header {
+    padding: 30px; /* Increases padding for header */
+    background: rgb(0, 123, 255); 
+    color: rgb(255, 255, 255); 
+  }
+  nav {
+    display: flex; /* Flexbox layout for navigation */
+    justify-content: space-between; /* Space between navigation items */
+    background: rgb(51, 51, 51); 
+    padding: 15px 0; /* Increased padding */
+    border-radius: 5px; 
+    margin: 10px 0;
+  }
+  main {
+    display: flex; /* Flexbox layout for main content */
+    flex-wrap: wrap; /* Allows wrapping of content */
+    justify-content: center; /* Centers main content */
+  }
+  section {
+    padding: 40px; /* Increased padding for larger screens */
+    margin: 30px; /* Increased margin for larger screens */
+  }
+}
+
+/* Responsive Styles for medium screens - Adjusts font size and layout */
+@media (max-width: 1023px) {
+  body {
+    font-size: 16px; /* Decreases font size for medium screens */
+  }
+  header {
+    padding: 20px; /* Adjusts padding for header */
+    background: rgb(0, 123, 255); 
+    color: rgb(255, 255, 255); 
+  }
+  nav {
+    display: block; /* Stacks navigation items */
+    background: rgb(51, 51, 51); 
+    padding: 15px 0; /* Increased padding */
+    border-radius: 5px; 
+    margin: 10px 0;
+  }
+  main {
+    display: block; /* Stacks main content */
+  }
+}
+```
+
+I will now attempt to apply these changes.
